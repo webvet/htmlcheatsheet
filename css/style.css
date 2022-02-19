@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    color:coral;
+}
+
+header, main {
+    margin: 20px;
+    font-family: 'Cardo', serif;
+}
+
+::first-letter {
+    font-size: 150%;
+    color:khaki;
+}
