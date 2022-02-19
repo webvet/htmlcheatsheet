@@ -12,3 +12,7 @@ header, main {
     font-size: 150%;
     color:khaki;
 }
+
+.code {
+    font-family: 'Space Mono', monospace;
+}
