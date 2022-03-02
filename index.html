@@ -13,15 +13,49 @@
 
     <main>
         <h2>What is CSS?</h2>
-            <p>CSS is the acronym for Cascading Style Sheets.</p> 
+            <p class="firstline">CSS is the acronym for Cascading Style Sheets.</p> 
             <p>It is used to describe the presentation of a document written in a markup language, such as HTML.</p>
             <p>It was developed to allow the separation of presentation (including layout, colours and fonts) and the content of webpages. </p>
+            <br>
         <h2>Why use CSS?</h2>
-            <p>Explain the practice of separating html, css and js in different files. One change can then affect multiple pages.</p>
+            <p class="firstline">Explain the practice of separating html, css and js in different files. One change can then affect multiple pages.</p>
+            <br>
         <h2>How to use CSS</h2>
-            <p>The three methods of using - inline, in head and external with examples of each</p>
+            <p class="firstline">The three methods of using - inline, in head and external - are outlined in the table below:</p>
+
+            <table border="1">
+                <caption>Table outlining the three methods of using CSS in webpages</caption>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Example</th>
+                        <th>Uses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Inline CSS</td>
+                        <td><span class="code">&lt;p style="color: red";&gt;Text here&lt;/p&gt;</span></td>
+                        <td>Might be used in a very simple, single webpage with only little styling requirements. If a website styled this way were to expand and develop, it makes changing colours, fonts, sizes etc more difficult and time-consuming. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Embedded CSS</td>
+                        <td>Within <span class="code">&lt;style&gt;</span> tags, often placed in the <span class="code">&lt;head&gt;</span> section</td>
+                        <td>Blocks of CSS can be written in this fashion, and is kept seperated from the HTML content in the &lt;body&gt; of the code. However, needs to be placed within <b>every</b>> new webpage inidividually, and therefore if any change is made, it has to be written to every page.</td>
+                    </tr>
+                    <tr>
+                        <td>External CSS</td>
+                        <td><span class="code">&lt;link href="style.css" rel="stylesheet"&gt;</span> links to an external file where changes made will apply to <b>all</b> relevant webpages.</td>
+                        <td>By separating the HTML and CSS code completely, this is generally the recommended method. It allows a single change in the CSS file to affect every page it is used in.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
         <h2>Final Thoughts</h2>
-            <p>Explanation of the inheritance of these three methods</p>
+            <p class="firstline">This, hopefully, briefly outlines what CSS is and how to use it. As a final thought, it is worth being aware that there is a heirarchy of how CSS is interpretted.</p>
+            <p>Inline CSS is loaded fastest, as the browser does not require to load any other informaiton (eg from an external file). And it takes priority of embedded and externally declared styles.</p>
+            <p>Next in line are any embedded styles, and finally the external sheet is read. The result is that an element could have a style set using all three - but the inline style will be used and rendered by the browser.</p>
     </main>
 </body>
 </html>
